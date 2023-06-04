@@ -1,0 +1,72 @@
+
+body {
+    background-image: url("1.jpg");
+}
+h1 {
+
+    text-align: center;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+h2{
+    text-align: center;
+}
+
+
+.d1{
+    margin:auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: beige;
+}
+
+.d1:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.d2{
+    margin:auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: beige;
+}
+
+.d2:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.d3{
+    margin:auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 5px;
+    background-color: beige;
+}
+
+.d3:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*h1:hover{
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}*/
+
+img{
+    float: left;
+    margin-right: 15px;
+
+}
+
+p{
+    display: inline-block;
+    
+}
+
+@keyframes example {
+    from{color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
+    to{text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;}
+}
