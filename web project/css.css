@@ -21,10 +21,15 @@ h2{
     padding: 5px;
     margin-bottom: 20px;
     background-color: beige;
+    position: relative;
 }
 
 .d1:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.d1:hover .overlay{
+    opacity:1;
+
 }
 .d2{
     margin:auto;
@@ -33,10 +38,14 @@ h2{
     padding: 5px;
     margin-bottom: 20px;
     background-color: beige;
+    position: relative;
 }
 
 .d2:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.d2:hover .overlay{
+    opacity:1;
 }
 .d3{
     margin:auto;
@@ -44,10 +53,14 @@ h2{
     border: 3px solid green;
     padding: 5px;
     background-color: beige;
+    position: relative;
 }
 
 .d3:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.d3:hover .overlay{
+    opacity: 1;
 }
 
 /*h1:hover{
@@ -70,3 +83,27 @@ p{
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
     to{text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;}
 }
+
+
+.text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: url("3.jpg");
+  }
